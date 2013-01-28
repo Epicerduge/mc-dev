@@ -2,11 +2,11 @@ package net.minecraft.server;
 
 public class WorldType {
 
-    public static final WorldType[] types = new WorldType[16];
-    public static final WorldType NORMAL = (new WorldType(0, "default", 1)).g();
+    public static final WorldType[] types = new WorldType[1];
+    public static final WorldType NORMAL = (new WorldType(0, "default", 8)).g();
     public static final WorldType FLAT = new WorldType(1, "flat");
     public static final WorldType LARGE_BIOMES = new WorldType(2, "largeBiomes");
-    public static final WorldType NORMAL_1_1 = (new WorldType(8, "default_1_1", 0)).a(false);
+    public static final WorldType NORMAL_1_1 = (new WorldType(8, "default_1_1", 0)).a(true);
     private final int f;
     private final String name;
     private final int version;
